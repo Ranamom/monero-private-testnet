@@ -1,8 +1,8 @@
 #!/usr/bin/env /usr/bin/bash
 
-monerod --testnet --p2p-bind-port 28080 --rpc-bind-ip 0.0.0.0 --confirm-external-bind --rpc-bind-port 28081 --zmq-rpc-bind-port 28082 --no-igd --hide-my-port --log-level 1 --data-dir /testnet/node_01 --p2p-bind-ip 127.0.0.1 --add-exclusive-node 127.0.0.1:38080 --add-exclusive-node 127.0.0.1:48080 --fixed-difficulty 100 --detach
-monerod --testnet --p2p-bind-port 38080 --rpc-bind-ip 0.0.0.0 --confirm-external-bind --rpc-bind-port 38081 --zmq-rpc-bind-port 38082 --no-igd --hide-my-port --log-level 1 --data-dir /testnet/node_02 --p2p-bind-ip 127.0.0.1 --add-exclusive-node 127.0.0.1:28080 --add-exclusive-node 127.0.0.1:48080 --fixed-difficulty 100 --detach
-monerod --testnet --p2p-bind-port 48080 --rpc-bind-ip 0.0.0.0 --confirm-external-bind --rpc-bind-port 48081 --zmq-rpc-bind-port 48082 --no-igd --hide-my-port --log-level 1 --data-dir /testnet/node_03 --p2p-bind-ip 127.0.0.1 --add-exclusive-node 127.0.0.1:28080 --add-exclusive-node 127.0.0.1:38080 --fixed-difficulty 100 --detach
+monerod --testnet --p2p-bind-port 28080 --rpc-bind-ip 0.0.0.0 --confirm-external-bind --rpc-bind-port 28081 --zmq-rpc-bind-port 28082 --no-igd --hide-my-port --log-level 1 --data-dir /testnet/node_01 --p2p-bind-ip 127.0.0.1 --add-exclusive-node 127.0.0.1:38080 --add-exclusive-node 127.0.0.1:48080 --fixed-difficulty 1 --detach
+monerod --testnet --p2p-bind-port 38080 --rpc-bind-ip 0.0.0.0 --confirm-external-bind --rpc-bind-port 38081 --zmq-rpc-bind-port 38082 --no-igd --hide-my-port --log-level 1 --data-dir /testnet/node_02 --p2p-bind-ip 127.0.0.1 --add-exclusive-node 127.0.0.1:28080 --add-exclusive-node 127.0.0.1:48080 --fixed-difficulty 1 --detach
+monerod --testnet --p2p-bind-port 48080 --rpc-bind-ip 0.0.0.0 --confirm-external-bind --rpc-bind-port 48081 --zmq-rpc-bind-port 48082 --no-igd --hide-my-port --log-level 1 --data-dir /testnet/node_03 --p2p-bind-ip 127.0.0.1 --add-exclusive-node 127.0.0.1:28080 --add-exclusive-node 127.0.0.1:38080 --fixed-difficulty 1 --detach
 
 seed1=$(</root/01_seed.txt)
 seed2=$(</root/02_seed.txt)
